@@ -1,0 +1,1 @@
+javascript:(function()%7B(function%20()%20%7Bfunction%20infiniteNetflix()%20%7Bif%20(%24('.player-autoplay-interrupter.no-select.show-autoplay-interrupter'))%20%7B%24('.button.continue-playing').click()%3BsetTimeout(infiniteNetflix%2C%20180000)%3B%7D%20else%20%7BsetTimeout(infiniteNetflix%2C%20100)%3B%7D%7D%3BinfiniteNetflix()%3B%7D())%7D)()
