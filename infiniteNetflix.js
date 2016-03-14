@@ -1,12 +1,14 @@
 (function () {
-  function infiniteNetflix() {
-    if ($('.player-autoplay-interrupter.no-select.show-autoplay-interrupter')) {
+  window.infiniteNetflix = function() {
+    if ($('.player-autoplay-interrupter.no-select.show-autoplay-interrupter').length) {
+      console.log('promt!!!');
       $('.button.continue-playing').click();
-      setTimeout(infiniteNetflix, 180000);
+      setTimeout(window.infiniteNetflix, 180000);
     } else {
-      setTimeout(infiniteNetflix, 100);
+      console.log('no-promt');
+      setTimeout(window.infiniteNetflix, 100);
     }
   };
 
-  infiniteNetflix();
+  window.infiniteNetflix();
 }());
